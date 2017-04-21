@@ -18,12 +18,16 @@ requirements:
   build:
     - openjdk
     - maven  # [not win]
-    - jupyter_client
   run:
     - openjdk
     - notebook
+    - jupyterlab
 
 test:
+  requires:
+    - jupyter_client
+  commands:
+    - conda list scijava-jupyter-kernel
 
 about:
   home: https://github.com/hadim/scijava-jupyter-kernel
