@@ -15,8 +15,7 @@ DEL apache-maven-3.5.0-bin.zip
 
 rem Install Scijava Jupyter Kernel
 MD "%PREFIX%\opt\scijava-jupyter-kernel"
-"%SRC_DIR%\maven\apache-maven-3.5.0\bin\mvn" clean install -Pconda "%RECIPE_DIR%\settings.xml" && if errorlevel 1 exit 1
-"%SRC_DIR%\maven\apache-maven-3.5.0\bin\mvn" dependency:copy-dependencies -Pconda "%RECIPE_DIR%\settings.xml" && if errorlevel 1 exit 1
+"%SRC_DIR%\maven\apache-maven-3.5.0\bin\mvn" clean dependency:copy-dependencies install -Pconda "%RECIPE_DIR%\settings.xml" && if errorlevel 1 exit 1
 
 rem TODO: tell Maven to also copy the main artifact !
 COPY /B "%PREFIX%\target\scijava-jupyter-kernel-*.jar" "%PREFIX%\opt\scijava-jupyter-kernel\"

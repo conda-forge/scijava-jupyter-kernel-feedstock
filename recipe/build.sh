@@ -14,8 +14,7 @@ cd $RECIPE_DIR/ && rm -fr beakerx
 # Install Scijava Jupyter Kernel
 cd $SRC_DIR/
 mkdir "$PREFIX/opt/scijava-jupyter-kernel"
-mvn clean install -Pconda --settings "$RECIPE_DIR/settings.xml"
-mvn dependency:copy-dependencies -Pconda --settings "$RECIPE_DIR/settings.xml"
+mvn clean dependency:copy-dependencies install -Pconda --settings "$RECIPE_DIR/settings.xml"
 
 # TODO: tell Maven to also copy the main artifact !
 cp $SRC_DIR/target/scijava-jupyter-kernel-*.jar "$PREFIX/opt/scijava-jupyter-kernel/"
