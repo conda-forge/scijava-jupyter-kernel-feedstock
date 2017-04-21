@@ -11,19 +11,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win32 or linux32]
 
 requirements:
   build:
     - openjdk
     - maven  # [not win]
-    - jupyter_client
   run:
     - openjdk
     - notebook
+    - jupyterlab
 
 test:
+  requires:
+    - jupyter_client
+  commands:
+    - conda list scijava-jupyter-kernel
 
 about:
   home: https://github.com/hadim/scijava-jupyter-kernel

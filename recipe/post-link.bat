@@ -1,8 +1,8 @@
 @echo on
 
-"java.exe" -classpath "%PREFIX%\opt\scijava-jupyter-kernel\jars\*"^
+"java.exe" -classpath "%PREFIX%\opt\scijava-jupyter-kernel\*"^
            "org.scijava.jupyter.commands.InstallScijavaKernel" ^
            -pythonBinaryPath "%PREFIX%\python.exe" ^
            -verbose "info" ^
-           -classpath "%PREFIX%\opt\scijava-jupyter-kernel\jars\*" ^
+           -classpath "%PREFIX%\opt\scijava-jupyter-kernel\*" ^
            -installAllKernels

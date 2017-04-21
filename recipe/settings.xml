@@ -1,9 +1,9 @@
 <settings>
   <profiles>
         <profile>
-            <id>imagej</id>
+            <id>conda</id>
             <properties>
-                <imagej.app.directory>${env.PREFIX}/opt/scijava-jupyter-kernel</imagej.app.directory>
+                <outputDirectory>${env.PREFIX}/opt/scijava-jupyter-kernel</outputDirectory>
                 <delete.other.versions>true</delete.other.versions>
                 <enforcer.skip>true</enforcer.skip>
             </properties>
