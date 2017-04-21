@@ -5,4 +5,5 @@
                      -pythonBinaryPath "$(which python)" \
                      -verbose "info" \
                      -classpath "${PREFIX}/opt/scijava-jupyter-kernel/*" \
+                     -javaBinaryPath "${PREFIX}/bin/java" \
                      -installAllKernels

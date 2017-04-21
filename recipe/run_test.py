@@ -12,3 +12,5 @@ assert "scijava-scala" in kernels
 assert "scijava-beanshell" in kernels
 assert "scijava-ruby" in kernels
 assert "scijava-javascript" in kernels
+
+print("All kernels correctly installed.")

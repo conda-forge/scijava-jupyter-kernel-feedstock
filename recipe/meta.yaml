@@ -1,5 +1,6 @@
-{% set version = "0.2.1" %}
-{% set sha256 = "7065f5d2fa74b7b33e3a7410913a59a0d74cb6f560cae254fef62156a48209a3" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "4e72fbe4d44cf16656e2287421b1e97233400f89bcbb34a046bc18d1e614aac3" %}
+{% set openjdk_version = "8.0.121" %}
 
 package:
   name: scijava-jupyter-kernel
@@ -11,15 +12,15 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: true  # [win32 or linux32]
+  number: 3
+  skip: true  # [win or linux32]
 
 requirements:
   build:
-    - openjdk
-    - maven  # [not win]
+    - openjdk =={{ openjdk_version }}
+    - maven
   run:
-    - openjdk
+    - openjdk =={{ openjdk_version }}
     - notebook
     - jupyterlab
 
