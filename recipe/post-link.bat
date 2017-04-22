@@ -8,3 +8,4 @@ rem @echo on
                                 -javaBinaryPath "%PREFIX%\Library\bin\java.exe" ^
                                 -installAllKernels
 
+
