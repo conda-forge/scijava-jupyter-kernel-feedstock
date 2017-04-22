@@ -1,5 +1,5 @@
-{% set version = "0.2.2" %}
-{% set sha256 = "4e72fbe4d44cf16656e2287421b1e97233400f89bcbb34a046bc18d1e614aac3" %}
+{% set version = "0.2.4" %}
+{% set sha256 = "44171c77f32da3e8514870890f07f6a46fab277d119687735dfab8b2c20d93b4" %}
 {% set openjdk_version = "8.0.121" %}
 
 package:
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
-  skip: true  # [win or linux32]
+  number: 0
+  skip: true  # [win32 or linux32]
 
 requirements:
   build:
@@ -36,8 +36,8 @@ about:
   license_file: LICENSE
   summary: 'A Java kernel for Jupyter.'
   description: A Java kernel for Jupyter.
-  doc_url: https://imagej.net/Scijava_Jupyter_Kernel
   dev_url: https://github.com/hadim/scijava-jupyter-kernel
+  doc_url: https://imagej.net/Scijava_Jupyter_Kernel
 
 extra:
   recipe-maintainers:
