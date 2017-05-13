@@ -6,4 +6,3 @@ rem @echo on
                                 -verbose "info" ^
                                 -classpath "%PREFIX%\opt\scijava-jupyter-kernel\*" ^
                                 -javaBinaryPath "%PREFIX%\Library\bin\java.exe" ^
-                                -installAllKernels
