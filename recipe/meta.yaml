@@ -1,5 +1,5 @@
-{% set version = "0.3.0" %}
-{% set sha256 = "a337dd225f7dcdf646a4a5fe4848c52db254be47dd1879cb48162d4f52a1e556" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "891ff904df4099519c4abdd69948bb85b63bef073370caf7ab8bfdc91470bd38" %}
 {% set openjdk_version = "8.0.121" %}
 
 package:
