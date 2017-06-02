@@ -1,7 +1,7 @@
 About scijava-jupyter-kernel
 ============================
 
-Home: https://github.com/hadim/scijava-jupyter-kernel
+Home: https://github.com/scijava/scijava-jupyter-kernel
 
 Package license: Apache
 
