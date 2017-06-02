@@ -1,5 +1,5 @@
-{% set version = "0.4.0" %}
-{% set sha256 = "1de43c55c6eba23d5cb87969937a2325a6b489c35c3323e4bec5092276575c82" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "0a619b6605d38970cffa86aa0ca874f83cc0c6336cf1f30d502a3d7b8d36e420" %}
 {% set openjdk_version = "8.0.121" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ version }}.tar.gz
-  url: https://github.com/hadim/scijava-jupyter-kernel/archive/{{ version }}.tar.gz
+  url: https://github.com/scijava/scijava-jupyter-kernel/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -31,12 +31,12 @@ test:
     - conda list scijava-jupyter-kernel
 
 about:
-  home: https://github.com/hadim/scijava-jupyter-kernel
+  home: https://github.com/scijava/scijava-jupyter-kernel
   license: Apache
   license_file: LICENSE.txt
   summary: 'A Java kernel for Jupyter.'
   description: A Java kernel for Jupyter.
-  dev_url: https://github.com/hadim/scijava-jupyter-kernel
+  dev_url: https://github.com/scijava/scijava-jupyter-kernel
   doc_url: https://imagej.net/Scijava_Jupyter_Kernel
 
 extra:
