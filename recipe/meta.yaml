@@ -1,14 +1,14 @@
-{% set version = "0.5.1" %}
-{% set sha256 = "7532bb4c3b4a083a8438e2f3039bff9cb64174831a30425cb7d8421b9f04f38f" %}
-{% set openjdk_version = "8.0.121" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "afd66d260d87ad67e26d292afc04c49512f976185107ef4c5eee44fcb51f38f1" %}
+{% set openjdk_version = "8.0.152" %}
 
 package:
   name: scijava-jupyter-kernel
   version: {{ version }}
 
 source:
-  fn: {{ version }}.tar.gz
-  url: https://github.com/scijava/scijava-jupyter-kernel/archive/{{ version }}.tar.gz
+  fn: scijava-jupyter-kernel-{{ version }}.tar.gz
+  url: https://github.com/scijava/scijava-jupyter-kernel/archive/scijava-jupyter-kernel-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
